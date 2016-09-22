@@ -21,3 +21,4 @@ cd get_aws_documents
 ## what next?
 
  - 并发的支持还不是很好，因为无法获取os.system('command')中command的返回值，无法判断爬取是否成功，，如果失败无法retry
+ - 由于AWS不是每个文档都是健全的，综合以上两点，应该用纯python实现文件流处理比较好
