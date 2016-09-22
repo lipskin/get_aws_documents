@@ -22,3 +22,4 @@ cd get_aws_documents
 
  - 并发的支持还不是很好，因为无法获取os.system('command')中command的返回值，无法判断爬取是否成功，，如果失败无法retry
  - 由于AWS不是每个文档都是健全的，综合以上两点，应该用纯python实现文件流处理比较好
+ - 发现一个`Connection reset by peer`的问题，并没有引发retry，我想应该是串行爬行的时候仍无法捕获错误造成的
