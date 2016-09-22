@@ -68,5 +68,6 @@ class Document():
 
 if __name__ == '__main__':
     input_str = input(bcolors.BOLD + '是否并行？(y/n)（将占用最大带宽）:\n' + bcolors.ENDC)
-    document = Document()
+    flag = '&' if input_str == 'y' else ''
+    document = Document(flag)
     document.get_document()
